@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ================   common css   ================= */
+/* ================   banner starts   ================= */
+section {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section::before {
+  content: '';
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(68, 18, 117, 0)), to(#232d64));
+  background: linear-gradient(180deg, rgba(68, 18, 117, 0) 50%, #232d64 100%);
+  z-index: 9999999;
+}
+
+section::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #232d64;
+  z-index: 9999999;
+  mix-blend-mode: color;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+section #text {
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  z-index: 99;
+}
+
+section #road {
+  z-index: 999;
+}
+
+/* ================   banner   ends   ================= */
+.footer {
+  width: 100%;
+  height: 400px;
+  background: #232d64;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+/* ================   banner starts   ================= */
+
+section{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(68,18,117,0) 50%, rgba(35,45,100,1) 100%);
+        z-index: 9999999;
+    }
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #232d64;
+        z-index: 9999999;
+        mix-blend-mode: color;
+    }
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+    #text{
+        position: relative;
+        color: #fff;
+        font-size: 10em;
+        z-index: 99;
+    }
+    #road{
+        z-index: 999;
+    }
+}
+/* ================   banner   ends   ================= */
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background: #232d64;
+}
