@@ -82,7 +82,19 @@ section #road {
 /* ================   banner   ends   ================= */
 .footer {
   width: 100%;
-  height: 400px;
   background: #232d64;
+  padding-bottom: 60px;
+}
+
+.footer h2 {
+  font-size: 36px;
+  color: antiquewhite;
+  font-family: sans-serif;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer p {
+  color: #f1f1f1;
 }
 /*# sourceMappingURL=style.css.map */
